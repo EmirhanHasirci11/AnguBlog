@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "yCvmi2iFIWm3ILWPHT3IMHCgvj2BhRJ5InztUhhL7K7593i+hZA3XCg8/ga3gAtzvqAZvoPphPGauRjpiMrQ1Q==",
+  "success": true,
+  "projectFilePath": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\AnguBlog.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\emir_\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\emir_\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\emir_\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\emir_\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\emir_\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\emir_\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

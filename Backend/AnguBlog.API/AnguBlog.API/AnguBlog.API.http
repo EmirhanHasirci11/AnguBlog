@@ -1,0 +1,6 @@
+@AnguBlog.API_HostAddress = http://localhost:5294
+
+GET {{AnguBlog.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "686EN88KH1AwvdyEUX3Pg2t2h7c1Cw8OBJcOPmxYypw=",
+  "Source": "AnguBlog.API",
+  "BasePath": "_content/AnguBlog.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

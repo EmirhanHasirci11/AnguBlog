@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AnguBlog.API.props" />
+</Project>
