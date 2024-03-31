@@ -9,6 +9,7 @@ export const routes: Routes = [
     },
     {
         path:"Admin/Categories/Add",
-        component:AddCategoryComponent
+        loadComponent:
+        ()=> import("./features/category/add-category/add-category.component").then(x=>x.AddCategoryComponent)
     }
 ];

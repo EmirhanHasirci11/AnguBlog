@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AddCategoryRequest  } from '../models/add-category-request.model';
+import { CategoryService } from '../services/category.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-add-category',
@@ -10,23 +12,26 @@ import { AddCategoryRequest  } from '../models/add-category-request.model';
   styleUrl: './add-category.component.css'
 })
 
-export class AddCategoryComponent {
+export class AddCategoryComponent implements OnDestroy {
 
   model:AddCategoryRequest
-
-  constructor(){
+  private addCategorySubscription? : Subscription
+  constructor(private categoryService:CategoryService){
 
     this.model={
       name:'Emirhan',
       urlHandle:''
     }  
-  }
-  clickBtn(){
-    console.log(this.model.name);
-
-    console.log(this.model.urlHandle);
+  }  
+  ngOnDestroy(): void {
+    this.addCategorySubscription?.unsubscribe();
   }
   onFormSubmit() {
-
+    this.addCategorySubscription= this.categoryService.addCategory(this.model).subscribe({
+      next:(response)=>{
+        console.log(response);
+        console.log("Category Creation is succeed");        
+      }
+    });
   }
 }

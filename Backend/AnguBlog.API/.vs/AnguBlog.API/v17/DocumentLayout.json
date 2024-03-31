@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "E:\\Angular.Net\\Backend\\AnguBlog.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\repositories\\concrete\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\repositories\\concrete\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\repositories\\abstract\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 126,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CategoryRepository.cs",
               "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Repositories\\Concrete\\CategoryRepository.cs",
               "RelativeDocumentMoniker": "AnguBlog.API\\Repositories\\Concrete\\CategoryRepository.cs",
@@ -75,8 +75,7 @@
               "RelativeToolTip": "AnguBlog.API\\Repositories\\Abstract\\ICategoryRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T22:04:49.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T22:04:49.72Z"
             },
             {
               "$type": "Document",
@@ -88,18 +87,17 @@
               "RelativeToolTip": "AnguBlog.API\\Models\\DTO\\CreateCategoryRequestDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T21:55:19.324Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T21:55:19.324Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "AnguBlog.API\\Controllers\\CategoriesController.cs",
               "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "AnguBlog.API\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwCEAAAAvAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCUAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-29T21:46:04.508Z",
               "EditorCaption": ""
@@ -114,8 +112,7 @@
               "RelativeToolTip": "AnguBlog.API\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T21:45:25.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T21:45:25.667Z"
             },
             {
               "$type": "Document",
@@ -131,13 +128,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Program.cs",
               "RelativeDocumentMoniker": "AnguBlog.API\\Program.cs",
               "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Program.cs",
               "RelativeToolTip": "AnguBlog.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABYAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAiwB8AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-29T21:27:35.02Z",
               "EditorCaption": ""
@@ -152,8 +149,7 @@
               "RelativeToolTip": "AnguBlog.API\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAACvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-29T21:23:45.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T21:23:45.774Z"
             },
             {
               "$type": "Document",
