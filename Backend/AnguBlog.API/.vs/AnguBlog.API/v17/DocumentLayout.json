@@ -62,8 +62,7 @@
               "RelativeToolTip": "AnguBlog.API\\Repositories\\Concrete\\CategoryRepository.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAgwBgAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T22:05:26.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T22:05:26.646Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "AnguBlog.API\\Repositories\\Abstract\\ICategoryRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T22:04:49.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T22:04:49.72Z"
             },
             {
               "$type": "Document",
@@ -98,7 +96,7 @@
               "RelativeDocumentMoniker": "AnguBlog.API\\Controllers\\CategoriesController.cs",
               "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "AnguBlog.API\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAlwCwAAAAAAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAtwDUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-29T21:46:04.508Z",
               "EditorCaption": ""
