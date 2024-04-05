@@ -19,5 +19,10 @@ namespace AnguBlog.API.Repositories.Concrete
             await _context.SaveChangesAsync();
             return category;
         }
+
+        public async Task<IEnumerable<Category>> GetAllCategoryAsync()
+        {
+            return await _context.Categories.ToListAsync();
+        }
     }
 }
