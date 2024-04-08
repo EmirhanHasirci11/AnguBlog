@@ -63,6 +63,26 @@ namespace AnguBlog.API.Controllers
             };
             return Ok(res);
         }
+        [HttpPut("{id:guid}")]
+        public async Task<IActionResult> EditCategory(Guid id,UpdateCategoryRequestDto request)
+        {
+            var category = new Category
+            {
+                Id = id,
+                Name = request.Name,
+                UrlHandle = request.UrlHandle,
+            };
+            category = await repository.UpdateAsync(category);
+            if(category == null)
+                return NotFound();
+            var response = new CategoryDto()
+            {
+                Id = category.Id,
+                Name = category.Name,
+                UrlHandle = category.UrlHandle,
+            };
+            return Ok(response);
+        }
         
     }
 }

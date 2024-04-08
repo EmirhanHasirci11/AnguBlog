@@ -29,5 +29,17 @@ namespace AnguBlog.API.Repositories.Concrete
         {
             return await _context.Categories.FirstOrDefaultAsync(x => x.Id.Equals(id));
         }
+
+        public async Task<Category?> UpdateAsync(Category category)
+        {
+            var current=await _context.Categories.FirstOrDefaultAsync(_context => _context.Id == category.Id);
+            if (current != null)
+            {
+                _context.Entry(current).CurrentValues.SetValues(category);
+                await _context.SaveChangesAsync();
+                return category;
+            }
+            return null;
+        }
     }
 }
