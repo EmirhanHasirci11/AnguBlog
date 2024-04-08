@@ -10,6 +10,7 @@
                     <th>ID</th>
                     <th>Name</th>
                     <th>UrlHandle</th>
+                    <th>Tools</th>
                 </tr>
             </thead>
             <tbody>
@@ -17,6 +18,9 @@
                     <td>{{category.id}}</td>
                     <td>{{category.name}}</td>
                     <td>{{category.urlHandle}}</td>
+                    <td>
+                        <a class="btn btn-outline-primary" [routerLink]="['/Admin/Categories',category.id]">Edit</a>
+                    </td>
                 </tr>
             </tbody>
         </table>
