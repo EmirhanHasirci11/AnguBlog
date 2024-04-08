@@ -63,6 +63,20 @@ namespace AnguBlog.API.Controllers
             };
             return Ok(res);
         }
+        [HttpDelete("{id:guid}")]
+        public async Task<IActionResult> DeleteCategory(Guid id)
+        {
+            var category = await repository.DeleteAsync(id);
+            if (category == null)
+                return NotFound();
+            var res = new CategoryDto()
+            {
+                Id = category.Id,
+                Name = category.Name,
+                UrlHandle = category.UrlHandle,
+            };
+            return Ok(res);
+        }
         [HttpPut("{id:guid}")]
         public async Task<IActionResult> EditCategory(Guid id,UpdateCategoryRequestDto request)
         {

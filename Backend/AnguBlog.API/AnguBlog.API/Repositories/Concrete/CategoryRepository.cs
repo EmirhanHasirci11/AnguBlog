@@ -20,6 +20,16 @@ namespace AnguBlog.API.Repositories.Concrete
             return category;
         }
 
+        public async Task<Category?> DeleteAsync(Guid id)
+        {
+            var category= await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
+            if (category == null)
+                return null;
+            _context.Categories.Remove(category);
+            await _context.SaveChangesAsync();
+            return category;
+        }
+
         public async Task<IEnumerable<Category>> GetAllCategoryAsync()
         {
             return await _context.Categories.ToListAsync();

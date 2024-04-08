@@ -25,4 +25,7 @@ export class CategoryService {
   editCategory(id:string,request:editCategoryRequest){
     return this.http.put<Category>(`${environment.apiBaseUrl}/api/categories/${id}`,request)
   }
+  deleteCategory(id:string){
+    return this.http.delete<Category>(`${environment.apiBaseUrl}/api/categories/${id}`);
+  }
 }

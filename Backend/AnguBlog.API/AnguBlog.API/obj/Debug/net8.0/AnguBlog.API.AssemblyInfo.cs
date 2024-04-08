@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AnguBlog.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6ecb80f3e44e7405a3b49d20d57de3014f4c606")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f245a2c05702d6f6318aa67ff0cfa19bc792a02a")]
 [assembly: System.Reflection.AssemblyProductAttribute("AnguBlog.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AnguBlog.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

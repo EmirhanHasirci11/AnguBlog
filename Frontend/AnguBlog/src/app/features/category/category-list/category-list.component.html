@@ -10,7 +10,7 @@
                     <th>ID</th>
                     <th>Name</th>
                     <th>UrlHandle</th>
-                    <th>Tools</th>
+                    <th colspan="2">Tools</th>
                 </tr>
             </thead>
             <tbody>
@@ -20,6 +20,9 @@
                     <td>{{category.urlHandle}}</td>
                     <td>
                         <a class="btn btn-outline-primary" [routerLink]="['/Admin/Categories',category.id]">Edit</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-outline-danger" (click)="onDelete(category.id)">Delete</a>
                     </td>
                 </tr>
             </tbody>
