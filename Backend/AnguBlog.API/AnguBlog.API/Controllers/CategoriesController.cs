@@ -49,5 +49,20 @@ namespace AnguBlog.API.Controllers
             }
             return Ok(response);
         }
+        [HttpGet("{id:guid}")]
+        public async Task<IActionResult> GetCategoryById(Guid id)
+        {
+            var existingCategory = await repository.GetById(id);
+            if(existingCategory == null)
+                return NotFound();
+            var res = new CategoryDto
+            {
+                Id = existingCategory.Id,
+                Name = existingCategory.Name,
+                UrlHandle = existingCategory.UrlHandle,
+            };
+            return Ok(res);
+        }
+        
     }
 }

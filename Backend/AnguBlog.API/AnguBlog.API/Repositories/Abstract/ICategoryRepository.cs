@@ -6,5 +6,6 @@ namespace AnguBlog.API.Repositories.Abstract
     {
         Task<Category> CreateAsync(Category category);
         Task<IEnumerable<Category>> GetAllCategoryAsync();
+        Task<Category?> GetById(Guid id);
     }
 }

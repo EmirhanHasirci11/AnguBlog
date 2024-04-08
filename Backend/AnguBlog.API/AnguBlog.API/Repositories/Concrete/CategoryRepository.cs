@@ -24,5 +24,10 @@ namespace AnguBlog.API.Repositories.Concrete
         {
             return await _context.Categories.ToListAsync();
         }
+
+        public async Task<Category?> GetById(Guid id)
+        {
+            return await _context.Categories.FirstOrDefaultAsync(x => x.Id.Equals(id));
+        }
     }
 }
