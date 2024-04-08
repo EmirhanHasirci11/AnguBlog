@@ -12,6 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
+builder.Services.AddScoped<IBlogPostRepository,BlogPostRepository>();
 builder.Services.AddDbContext<ApplicationDbContext>(opts =>
 {
     opts.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));

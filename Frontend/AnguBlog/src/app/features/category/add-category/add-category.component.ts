@@ -30,7 +30,7 @@ export class AddCategoryComponent implements OnDestroy {
   onFormSubmit() {
     this.addCategorySubscription= this.categoryService.addCategory(this.model).subscribe({
       next:(response)=>{
-        this.router.navigateByUrl('/Admin/Categories')
+        this.router.navigateByUrl('/admin/categories')
       }
     });
   }

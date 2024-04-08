@@ -52,7 +52,7 @@ export class EditCategoryComponent implements OnInit, OnDestroy {
      this.editPromise= this.service.editCategory(this.id, editRequest)
         .subscribe({
           next: (response) => {
-            this.route.navigateByUrl('/Admin/Categories')
+            this.route.navigateByUrl('/admin/categories')
           }
         });
     }
