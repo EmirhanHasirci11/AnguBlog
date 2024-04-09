@@ -23,7 +23,7 @@ namespace AnguBlog.API.Repositories.Concrete
 
         public async Task<IEnumerable<BlogPost>> GetAllBlogPostsAsync()
         {
-            return await _context.BlogPosts.ToListAsync();
+            return await _context.BlogPosts.Include(x=>x.Categories).ToListAsync();
         }
     }
 }

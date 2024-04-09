@@ -11,10 +11,12 @@ namespace AnguBlog.API.Controllers
     public class BlogPostsController : ControllerBase
     {
         private readonly IBlogPostRepository blogPostRepository;
+        private readonly ICategoryRepository categoryRepository;
 
-        public BlogPostsController(IBlogPostRepository blogPostRepository)
+        public BlogPostsController(IBlogPostRepository blogPostRepository, ICategoryRepository categoryRepository)
         {
             this.blogPostRepository = blogPostRepository;
+            this.categoryRepository = categoryRepository;
         }
 
         [HttpPost]
@@ -30,7 +32,16 @@ namespace AnguBlog.API.Controllers
                 ShortDescription = dto.ShortDescription,
                 Title = dto.Title,
                 UrlHandle = dto.UrlHandle,
+                Categories = new List<Category>()
             };
+            foreach(var category in dto.Categories) 
+            {
+                var existingCategory = await categoryRepository.GetById(category);
+                if(existingCategory != null) 
+                {
+                    blogPost.Categories.Add(existingCategory);
+                }
+            }
 
             var createdBlog = await blogPostRepository.CreateAsync(blogPost);
 
@@ -45,6 +56,12 @@ namespace AnguBlog.API.Controllers
                 ShortDescription = createdBlog.ShortDescription,
                 Title = createdBlog.Title,
                 UrlHandle = createdBlog.UrlHandle,
+                Categories = createdBlog.Categories.Select(x => new CategoryDto()
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    UrlHandle = x.UrlHandle,
+                }).ToList()
             };
             return Ok(response);
         }
@@ -67,6 +84,12 @@ namespace AnguBlog.API.Controllers
                     ShortDescription = blogPost.ShortDescription,
                     Title = blogPost.Title,
                     UrlHandle = blogPost.UrlHandle,
+                    Categories = blogPost.Categories.Select(x => new CategoryDto()
+                    {
+                        Id = x.Id,
+                        Name = x.Name,
+                        UrlHandle = x.UrlHandle,
+                    }).ToList()
                 });
             }
             return Ok(response);
