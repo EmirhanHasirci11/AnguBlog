@@ -9,15 +9,23 @@ import { MarkdownModule } from 'ngx-markdown';
 import { CategoryService } from '../../category/services/category.service';
 import { Category } from '../../category/models/category.model';
 import { EditBlogPost } from '../models/edit-blogpost.model';
+import { ImageSelectorComponent } from '../../../shared/components/image-selector/image-selector.component';
 
 @Component({
   selector: 'app-edit-blogpost',
   standalone: true,
-  imports: [CommonModule, FormsModule, MarkdownModule],
+  imports: [CommonModule, FormsModule, MarkdownModule, ImageSelectorComponent],
   templateUrl: './edit-blogpost.component.html',
   styleUrl: './edit-blogpost.component.css'
 })
 export class EditBlogpostComponent implements OnInit, OnDestroy {
+  closeImageSelector() {
+    this.isImageSelectorVisible = false;
+  }
+  isImageSelectorVisible: boolean = false;
+  openImageSelector() {
+    this.isImageSelectorVisible = true;
+  }
   id: string | null = null;
   routeSub?: Subscription
   updateBlogSub?: Subscription
@@ -27,10 +35,10 @@ export class EditBlogpostComponent implements OnInit, OnDestroy {
   categories$?: Observable<Category[]>
   selectedCategories?: string[]
 
-  onDelete():void {
+  onDelete(): void {
     if (this.id) {
       console.log(`inside of codeblock`);
-      
+
       this.deleteBlogPostSub = this.blogService.deleteBlogPost(this.id).subscribe({
         next: (res) => {
           this.router.navigateByUrl("/admin/blogposts")
