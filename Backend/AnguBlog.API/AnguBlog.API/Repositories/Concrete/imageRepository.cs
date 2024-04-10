@@ -1,6 +1,7 @@
 ﻿using AnguBlog.API.Data;
 using AnguBlog.API.Models.Domain;
 using AnguBlog.API.Repositories.Abstract;
+using Microsoft.EntityFrameworkCore;
 
 namespace AnguBlog.API.Repositories.Concrete
 {
@@ -31,6 +32,11 @@ namespace AnguBlog.API.Repositories.Concrete
             await dbContext.AddAsync(blogImage);
             await dbContext.SaveChangesAsync();
             return blogImage;
+        }
+
+        public async Task<IEnumerable<BlogImage>> GetAll()
+        {
+            return await dbContext.BlogImages.ToListAsync();
         }
     }
 }

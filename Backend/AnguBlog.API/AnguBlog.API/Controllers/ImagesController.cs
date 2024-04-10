@@ -21,15 +21,15 @@ namespace AnguBlog.API.Controllers
         public async Task<IActionResult> UploadImage([FromForm] IFormFile file, [FromForm] string fileName, [FromForm] string title)
         {
             ValidateFileUpload(file);
-            if ( ModelState.IsValid )
+            if (ModelState.IsValid)
             {
                 var blogImage = new BlogImage
-                {                    
+                {
                     FileName = fileName,
-                    Title = title,                    
+                    Title = title,
                     FileExtension = Path.GetExtension(file.FileName),
                     DateCreated = DateTime.Now
-                };  
+                };
                 blogImage = await imageRepostiory.CreateAsync(file, blogImage);
                 var response = new BlogImageDto
                 {
@@ -47,18 +47,37 @@ namespace AnguBlog.API.Controllers
         }
         private void ValidateFileUpload(IFormFile file)
         {
-           var allowedExtensions = new[] { ".jpg", ".jpeg", ".png"};
+            var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
 
-            if(!allowedExtensions.Contains(Path.GetExtension(file.FileName).ToLower()))
+            if (!allowedExtensions.Contains(Path.GetExtension(file.FileName).ToLower()))
             {
                 ModelState.AddModelError("file", "Invalid file extension. Only .jpg, .jpeg, .png are allowed.");
             }
 
-            if(file.Length > 10485760)
+            if (file.Length > 10485760)
             {
                 ModelState.AddModelError("file", "The file size should not exceed 10MB.");
             }
 
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetAllImages()
+        {
+            var images = await imageRepostiory.GetAll();
+            var response = new List<BlogImageDto>();
+            foreach (var image in images)
+            {
+                response.Add(new BlogImageDto
+                {
+                    Id = image.Id,
+                    FileName = image.FileName,
+                    FileExtension = image.FileExtension,
+                    Title = image.Title,
+                    Url = image.Url,
+                    DateCreated = image.DateCreated
+                });
+            } 
+            return Ok(response);
         }
     }
 }

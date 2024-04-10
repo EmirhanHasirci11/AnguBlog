@@ -10,6 +10,7 @@ import { CategoryService } from '../../category/services/category.service';
 import { Category } from '../../category/models/category.model';
 import { EditBlogPost } from '../models/edit-blogpost.model';
 import { ImageSelectorComponent } from '../../../shared/components/image-selector/image-selector.component';
+import { ImageService } from '../../../shared/components/image-selector/image.service';
 
 @Component({
   selector: 'app-edit-blogpost',
@@ -19,6 +20,12 @@ import { ImageSelectorComponent } from '../../../shared/components/image-selecto
   styleUrl: './edit-blogpost.component.css'
 })
 export class EditBlogpostComponent implements OnInit, OnDestroy {
+  constructor(private blogService: BlogPostService, private catService: CategoryService,
+    private route: ActivatedRoute,
+    private router: Router,
+  private imageService:ImageService) {
+
+  }
   closeImageSelector() {
     this.isImageSelectorVisible = false;
   }
@@ -30,11 +37,12 @@ export class EditBlogpostComponent implements OnInit, OnDestroy {
   routeSub?: Subscription
   updateBlogSub?: Subscription
   getBlogSub?: Subscription
+  imageSelectSub?: Subscription
   deleteBlogPostSub?: Subscription
   model?: BlogPost
   categories$?: Observable<Category[]>
   selectedCategories?: string[]
-
+  
   onDelete(): void {
     if (this.id) {
       console.log(`inside of codeblock`);
@@ -66,16 +74,12 @@ export class EditBlogpostComponent implements OnInit, OnDestroy {
       })
     }
   }
-  constructor(private blogService: BlogPostService, private catService: CategoryService,
-    private route: ActivatedRoute,
-    private router: Router) {
-
-  }
   ngOnDestroy(): void {
     this.routeSub?.unsubscribe();
     this.updateBlogSub?.unsubscribe();
     this.getBlogSub?.unsubscribe();
     this.deleteBlogPostSub?.unsubscribe();
+    this.imageSelectSub?.unsubscribe();
   }
 
 
@@ -94,6 +98,11 @@ export class EditBlogpostComponent implements OnInit, OnDestroy {
         }
       }
     })
+   this.imageSelectSub= this.imageService.onSelectImage().subscribe({next:(res)=>{
+      if(this.model)
+        this.model.featuredImageUrl=res.url
+      this.isImageSelectorVisible=false;
+    }})
   }
 
 }

@@ -5,5 +5,6 @@ namespace AnguBlog.API.Repositories.Abstract
     public interface IimageRepostiory
     {
         Task<BlogImage> CreateAsync(IFormFile file,BlogImage blogImage);
+        Task<IEnumerable<BlogImage>> GetAll();
     }
 }
