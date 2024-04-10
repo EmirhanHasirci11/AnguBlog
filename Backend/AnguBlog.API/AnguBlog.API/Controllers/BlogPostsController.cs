@@ -34,10 +34,10 @@ namespace AnguBlog.API.Controllers
                 UrlHandle = dto.UrlHandle,
                 Categories = new List<Category>()
             };
-            foreach(var category in dto.Categories) 
+            foreach (var category in dto.Categories)
             {
                 var existingCategory = await categoryRepository.GetById(category);
-                if(existingCategory != null) 
+                if (existingCategory != null)
                 {
                     blogPost.Categories.Add(existingCategory);
                 }
@@ -94,6 +94,81 @@ namespace AnguBlog.API.Controllers
             }
             return Ok(response);
 
+        }
+        [HttpGet("{id:guid}")]
+        public async Task<IActionResult> GetBlogPostById(Guid id)
+        {
+            var blogPost = await blogPostRepository.GetById(id);
+            if (blogPost == null)
+                return NotFound();
+            var response = new BlogPostDto()
+            {
+                Id = blogPost.Id,
+                Author = blogPost.Author,
+                Content = blogPost.Content,
+                FeaturedImageUrl = blogPost.FeaturedImageUrl,
+                IsVisible = blogPost.IsVisible,
+                PublishedDate = blogPost.PublishedDate,
+                ShortDescription = blogPost.ShortDescription,
+                Title = blogPost.Title,
+                UrlHandle = blogPost.UrlHandle,
+                Categories = blogPost.Categories.Select(x => new CategoryDto()
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    UrlHandle = x.UrlHandle,
+                }).ToList()
+            };
+            return Ok(response);
+        }
+        [HttpPut("{id:guid}")]
+        public async Task<IActionResult> UpdatePostById(Guid id, UpdateBlogPostDto request)
+        {
+            var blogPost = new BlogPost()
+            {
+                Id = id,
+                Author = request.Author,
+                Content = request.Content,
+                FeaturedImageUrl = request.FeaturedImageUrl,
+                IsVisible = request.IsVisible,
+                PublishedDate = request.PublishedDate,
+                ShortDescription = request.ShortDescription,
+                Title = request.Title,
+                UrlHandle = request.UrlHandle,
+                Categories = new List<Category>()
+            };
+            foreach (var category in request.Categories)
+            {
+                var existedCategory = await categoryRepository.GetById(category);
+                if (existedCategory != null)
+                {
+                    blogPost.Categories.Add(existedCategory);
+                }
+            }
+            var blog = await blogPostRepository.UpdateAsync(blogPost);
+            if (blog == null)
+            {
+                return NotFound();
+            }
+            var response = new BlogPostDto
+            {
+                Id = blogPost.Id,
+                Author = blogPost.Author,
+                Content = blogPost.Content,
+                FeaturedImageUrl = blogPost.FeaturedImageUrl,
+                IsVisible = blogPost.IsVisible,
+                PublishedDate = blogPost.PublishedDate,
+                ShortDescription = blogPost.ShortDescription,
+                Title = blogPost.Title,
+                UrlHandle = blogPost.UrlHandle,
+                Categories = blogPost.Categories.Select(x => new CategoryDto()
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    UrlHandle = x.UrlHandle,
+                }).ToList()
+            };
+            return Ok(response);
         }
     }
 }

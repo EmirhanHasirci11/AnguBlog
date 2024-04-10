@@ -26,5 +26,10 @@ export const routes: Routes = [
         path:"admin/blogposts/add",
         loadComponent:
         ()=>import("./features/blog-post/add-blogpost/add-blogpost.component").then(x=>x.AddBlogpostComponent)
+    },
+    {
+        path:"admin/blogposts/:id",
+        loadComponent:
+        ()=>import("./features/blog-post/edit-blogpost/edit-blogpost.component").then(x=>x.EditBlogpostComponent)
     }
 ];

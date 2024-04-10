@@ -23,7 +23,30 @@ namespace AnguBlog.API.Repositories.Concrete
 
         public async Task<IEnumerable<BlogPost>> GetAllBlogPostsAsync()
         {
-            return await _context.BlogPosts.Include(x=>x.Categories).ToListAsync();
+            return await _context.BlogPosts.Include(x => x.Categories).ToListAsync();
+        }
+
+        public async Task<BlogPost?> GetById(Guid id)
+        {
+            return await _context.BlogPosts.Include(x => x.Categories).FirstOrDefaultAsync(x => x.Id == id);
+        }
+
+        public async Task<BlogPost?> UpdateAsync(BlogPost blogPost)
+        {
+            var existingBlog = await _context.BlogPosts.Include(x => x.Categories).FirstOrDefaultAsync(x => x.Id == blogPost.Id);
+
+            if (existingBlog == null)
+            {
+                return null;
+            }
+            _context.Entry(existingBlog).CurrentValues.SetValues(blogPost);
+
+            existingBlog.Categories = blogPost.Categories;
+
+            await _context.SaveChangesAsync();
+
+            return blogPost;
+
         }
     }
 }
