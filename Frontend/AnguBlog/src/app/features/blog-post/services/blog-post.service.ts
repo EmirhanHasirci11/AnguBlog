@@ -20,9 +20,12 @@ export class BlogPostService {
     return this.http.get<BlogPost[]>(`${environment.apiBaseUrl}/api/blogposts`);
   }
   getById(id:string):Observable<BlogPost>{
-    return this.http.get<BlogPost>(`${environment.apiBaseUrl}/api/blogposts/${id}`,)
+    return this.http.get<BlogPost>(`${environment.apiBaseUrl}/api/blogposts/${id}`)
   }
-  editBlogpost(id:string,request:EditBlogPost){
+  editBlogpost(id:string,request:EditBlogPost):Observable<BlogPost>{
     return this.http.put<BlogPost>(`${environment.apiBaseUrl}/api/blogposts/${id}`,request)
+  }
+  deleteBlogPost(id:string):Observable<BlogPost>{
+    return this.http.delete<BlogPost>(`${environment.apiBaseUrl}/api/blogposts/${id}`)
   }
 }

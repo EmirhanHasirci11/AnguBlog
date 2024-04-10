@@ -18,6 +18,26 @@ import { EditBlogPost } from '../models/edit-blogpost.model';
   styleUrl: './edit-blogpost.component.css'
 })
 export class EditBlogpostComponent implements OnInit, OnDestroy {
+  id: string | null = null;
+  routeSub?: Subscription
+  updateBlogSub?: Subscription
+  getBlogSub?: Subscription
+  deleteBlogPostSub?: Subscription
+  model?: BlogPost
+  categories$?: Observable<Category[]>
+  selectedCategories?: string[]
+
+  onDelete():void {
+    if (this.id) {
+      console.log(`inside of codeblock`);
+      
+      this.deleteBlogPostSub = this.blogService.deleteBlogPost(this.id).subscribe({
+        next: (res) => {
+          this.router.navigateByUrl("/admin/blogposts")
+        }
+      })
+    }
+  }
   onFormSubmit(): void {
     if (this.model && this.id) {
       var updatedBlog: EditBlogPost = {
@@ -38,13 +58,6 @@ export class EditBlogpostComponent implements OnInit, OnDestroy {
       })
     }
   }
-  id: string | null = null;
-  routeSub?: Subscription
-  updateBlogSub?: Subscription
-  getBlogSub?: Subscription
-  model?: BlogPost
-  categories$?: Observable<Category[]>
-  selectedCategories?: string[]
   constructor(private blogService: BlogPostService, private catService: CategoryService,
     private route: ActivatedRoute,
     private router: Router) {
@@ -54,6 +67,7 @@ export class EditBlogpostComponent implements OnInit, OnDestroy {
     this.routeSub?.unsubscribe();
     this.updateBlogSub?.unsubscribe();
     this.getBlogSub?.unsubscribe();
+    this.deleteBlogPostSub?.unsubscribe();
   }
 
 

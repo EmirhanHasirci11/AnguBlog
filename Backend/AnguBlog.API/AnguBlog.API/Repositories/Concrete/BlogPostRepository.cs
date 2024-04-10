@@ -48,5 +48,16 @@ namespace AnguBlog.API.Repositories.Concrete
             return blogPost;
 
         }
+        public async Task<BlogPost> DeleteAsync(Guid id)
+        {
+            var blogPost = await _context.BlogPosts.FirstOrDefaultAsync(x => x.Id == id);
+            if (blogPost != null)
+            {
+                _context.BlogPosts.Remove(blogPost);
+                await _context.SaveChangesAsync();
+                return blogPost;
+            }
+            return null;
+        }
     }
 }
