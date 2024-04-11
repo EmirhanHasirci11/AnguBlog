@@ -2,6 +2,7 @@
 using AnguBlog.API.Models.Domain;
 using AnguBlog.API.Models.DTO;
 using AnguBlog.API.Repositories.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,6 +19,7 @@ namespace AnguBlog.API.Controllers
             this.repository = repository;
         }
         [HttpPost]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> CreateCategory(CreateCategoryRequestDto request)
         {
             var category = new Category()
@@ -64,6 +66,7 @@ namespace AnguBlog.API.Controllers
             return Ok(res);
         }
         [HttpDelete("{id:guid}")]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> DeleteCategory(Guid id)
         {
             var category = await repository.DeleteAsync(id);
@@ -78,6 +81,7 @@ namespace AnguBlog.API.Controllers
             return Ok(res);
         }
         [HttpPut("{id:guid}")]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> EditCategory(Guid id,UpdateCategoryRequestDto request)
         {
             var category = new Category

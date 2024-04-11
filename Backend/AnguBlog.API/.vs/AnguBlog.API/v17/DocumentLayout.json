@@ -3,44 +3,44 @@
   "WorkspaceRootPath": "E:\\Angular.Net\\Backend\\AnguBlog.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\controllers\\blogpostscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\controllers\\blogpostscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\repositories\\concrete\\blogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\repositories\\concrete\\blogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\repositories\\concrete\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\repositories\\concrete\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\repositories\\abstract\\iblogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\repositories\\abstract\\iblogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\repositories\\concrete\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\repositories\\concrete\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\repositories\\abstract\\iimagerepostiory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\repositories\\abstract\\iimagerepostiory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\models\\dto\\blogimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\models\\dto\\blogimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Migrations\\AuthDb\\20240411121641_Inital for Auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AnguBlog.API\\Migrations\\AuthDb\\20240411121641_Inital for Auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\models\\domain\\blogimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\models\\domain\\blogimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\repositories\\abstract\\itokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\repositories\\abstract\\itokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\models\\dto\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\models\\dto\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\models\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\models\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|e:\\angular.net\\backend\\angublog.api\\angublog.api\\models\\dto\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{045E8E29-87F5-4AA0-8854-91D5F096C95D}|AnguBlog.API\\AnguBlog.API.csproj|solutionrelative:angublog.api\\models\\dto\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 128,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,126 +58,132 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IBlogPostRepository.cs",
-              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Repositories\\Abstract\\IBlogPostRepository.cs",
-              "RelativeDocumentMoniker": "AnguBlog.API\\Repositories\\Abstract\\IBlogPostRepository.cs",
-              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Repositories\\Abstract\\IBlogPostRepository.cs",
-              "RelativeToolTip": "AnguBlog.API\\Repositories\\Abstract\\IBlogPostRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T00:17:24.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BlogPostRepository.cs",
-              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Repositories\\Concrete\\BlogPostRepository.cs",
-              "RelativeDocumentMoniker": "AnguBlog.API\\Repositories\\Concrete\\BlogPostRepository.cs",
-              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Repositories\\Concrete\\BlogPostRepository.cs",
-              "RelativeToolTip": "AnguBlog.API\\Repositories\\Concrete\\BlogPostRepository.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAmwD4AAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T22:59:23.132Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BlogImageDto.cs",
-              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Models\\DTO\\BlogImageDto.cs",
-              "RelativeDocumentMoniker": "AnguBlog.API\\Models\\DTO\\BlogImageDto.cs",
-              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Models\\DTO\\BlogImageDto.cs",
-              "RelativeToolTip": "AnguBlog.API\\Models\\DTO\\BlogImageDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T22:32:00.811Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Program.cs",
-              "RelativeDocumentMoniker": "AnguBlog.API\\Program.cs",
-              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Program.cs",
-              "RelativeToolTip": "AnguBlog.API\\Program.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAAACMAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T22:29:16.599Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "imageRepository.cs",
-              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Repositories\\Concrete\\imageRepository.cs",
-              "RelativeDocumentMoniker": "AnguBlog.API\\Repositories\\Concrete\\imageRepository.cs",
-              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Repositories\\Concrete\\imageRepository.cs",
-              "RelativeToolTip": "AnguBlog.API\\Repositories\\Concrete\\imageRepository.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAowCYAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T22:23:03.021Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IimageRepostiory.cs",
-              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Repositories\\Abstract\\IimageRepostiory.cs",
-              "RelativeDocumentMoniker": "AnguBlog.API\\Repositories\\Abstract\\IimageRepostiory.cs",
-              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Repositories\\Abstract\\IimageRepostiory.cs",
-              "RelativeToolTip": "AnguBlog.API\\Repositories\\Abstract\\IimageRepostiory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T22:22:22.657Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "AnguBlog.API\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "AnguBlog.API\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T22:18:37.856Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "BlogPostsController.cs",
               "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Controllers\\BlogPostsController.cs",
               "RelativeDocumentMoniker": "AnguBlog.API\\Controllers\\BlogPostsController.cs",
               "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Controllers\\BlogPostsController.cs",
               "RelativeToolTip": "AnguBlog.API\\Controllers\\BlogPostsController.cs",
-              "ViewState": "AQIAALcAAAAAAAAAAAAiwMcAAAAbAAAA",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAIwLQAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T22:18:35.498Z",
+              "WhenOpened": "2024-04-11T12:29:48.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "AnguBlog.API\\Controllers\\CategoriesController.cs",
+              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "AnguBlog.API\\Controllers\\CategoriesController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAIwFoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T12:28:40.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20240411121641_Inital for Auth.cs",
+              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Migrations\\AuthDb\\20240411121641_Inital for Auth.cs",
+              "RelativeDocumentMoniker": "AnguBlog.API\\Migrations\\AuthDb\\20240411121641_Inital for Auth.cs",
+              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Migrations\\AuthDb\\20240411121641_Inital for Auth.cs",
+              "RelativeToolTip": "AnguBlog.API\\Migrations\\AuthDb\\20240411121641_Inital for Auth.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T12:16:41.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Program.cs",
+              "RelativeDocumentMoniker": "AnguBlog.API\\Program.cs",
+              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Program.cs",
+              "RelativeToolTip": "AnguBlog.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T12:14:38.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TokenRepository.cs",
+              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Repositories\\Concrete\\TokenRepository.cs",
+              "RelativeDocumentMoniker": "AnguBlog.API\\Repositories\\Concrete\\TokenRepository.cs",
+              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Repositories\\Concrete\\TokenRepository.cs",
+              "RelativeToolTip": "AnguBlog.API\\Repositories\\Concrete\\TokenRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T12:12:31.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ITokenRepository.cs",
+              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Repositories\\Abstract\\ITokenRepository.cs",
+              "RelativeDocumentMoniker": "AnguBlog.API\\Repositories\\Abstract\\ITokenRepository.cs",
+              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Repositories\\Abstract\\ITokenRepository.cs",
+              "RelativeToolTip": "AnguBlog.API\\Repositories\\Abstract\\ITokenRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T12:12:08.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Models\\DTO\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "AnguBlog.API\\Models\\DTO\\LoginResponseDto.cs",
+              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Models\\DTO\\LoginResponseDto.cs",
+              "RelativeToolTip": "AnguBlog.API\\Models\\DTO\\LoginResponseDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T12:11:01.52Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "BlogImage.cs",
-              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Models\\Domain\\BlogImage.cs",
-              "RelativeDocumentMoniker": "AnguBlog.API\\Models\\Domain\\BlogImage.cs",
-              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Models\\Domain\\BlogImage.cs",
-              "RelativeToolTip": "AnguBlog.API\\Models\\Domain\\BlogImage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAwAAAA",
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Models\\DTO\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "AnguBlog.API\\Models\\DTO\\LoginRequestDto.cs",
+              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Models\\DTO\\LoginRequestDto.cs",
+              "RelativeToolTip": "AnguBlog.API\\Models\\DTO\\LoginRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T22:18:31.588Z"
+              "WhenOpened": "2024-04-11T12:10:38.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterRequestDto.cs",
+              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Models\\DTO\\RegisterRequestDto.cs",
+              "RelativeDocumentMoniker": "AnguBlog.API\\Models\\DTO\\RegisterRequestDto.cs",
+              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Models\\DTO\\RegisterRequestDto.cs",
+              "RelativeToolTip": "AnguBlog.API\\Models\\DTO\\RegisterRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T12:09:55.701Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ImagesController.cs",
-              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Controllers\\ImagesController.cs",
-              "RelativeDocumentMoniker": "AnguBlog.API\\Controllers\\ImagesController.cs",
-              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Controllers\\ImagesController.cs",
-              "RelativeToolTip": "AnguBlog.API\\Controllers\\ImagesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AnguBlog.API\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\Angular.Net\\Backend\\AnguBlog.API\\AnguBlog.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AnguBlog.API\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwC0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T22:14:22.75Z",
+              "WhenOpened": "2024-04-11T12:09:14.507Z",
               "EditorCaption": ""
             }
           ]

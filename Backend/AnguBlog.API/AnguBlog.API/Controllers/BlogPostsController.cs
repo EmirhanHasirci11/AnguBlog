@@ -1,6 +1,7 @@
 ﻿using AnguBlog.API.Models.Domain;
 using AnguBlog.API.Models.DTO;
 using AnguBlog.API.Repositories.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,6 +21,7 @@ namespace AnguBlog.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles ="Writer")]
         public async Task<IActionResult> AddBlogPost(CreateBlogPostRequestDto dto)
         {
             var blogPost = new BlogPost()
@@ -120,8 +122,10 @@ namespace AnguBlog.API.Controllers
                 }).ToList()
             };
             return Ok(response);
+
         }
         [HttpPut("{id:guid}")]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> UpdatePostById(Guid id, UpdateBlogPostDto request)
         {
             var blogPost = new BlogPost()
@@ -171,7 +175,10 @@ namespace AnguBlog.API.Controllers
             return Ok(response);
         }
 
+
+
         [HttpDelete("{id:guid}")]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> DeletePostBlog(Guid id)
         {
             var blogPost = await blogPostRepository.DeleteAsync(id);
