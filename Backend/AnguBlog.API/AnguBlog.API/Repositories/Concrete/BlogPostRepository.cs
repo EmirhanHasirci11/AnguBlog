@@ -59,5 +59,10 @@ namespace AnguBlog.API.Repositories.Concrete
             }
             return null;
         }
+
+        public async Task<BlogPost?> GetByUrl(string url)
+        {
+           return await _context.BlogPosts.Include(x => x.Categories).FirstOrDefaultAsync(x => x.UrlHandle == url);
+        }
     }
 }

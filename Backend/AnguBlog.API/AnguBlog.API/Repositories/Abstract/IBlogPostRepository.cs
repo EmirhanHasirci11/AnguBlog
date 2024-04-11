@@ -7,6 +7,7 @@ namespace AnguBlog.API.Repositories.Abstract
         Task<BlogPost> CreateAsync(BlogPost blogPost);
         Task<IEnumerable<BlogPost>> GetAllBlogPostsAsync();
         Task<BlogPost?> GetById(Guid id);
+        Task<BlogPost?> GetByUrl(string url);
         Task<BlogPost?> UpdateAsync(BlogPost blogPost);
         Task<BlogPost?> DeleteAsync(Guid id);
     }

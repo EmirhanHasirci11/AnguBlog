@@ -201,5 +201,31 @@ namespace AnguBlog.API.Controllers
             };
             return Ok(response);
         }
+        [HttpGet("{url}")]
+        public async Task<IActionResult> GetBlogPostByUrl(string url)
+        {
+            var blogPost = await blogPostRepository.GetByUrl(url);
+            if (blogPost == null)
+                return NotFound();
+            var response = new BlogPostDto()
+            {
+                Id = blogPost.Id,
+                Author = blogPost.Author,
+                Content = blogPost.Content,
+                FeaturedImageUrl = blogPost.FeaturedImageUrl,
+                IsVisible = blogPost.IsVisible,
+                PublishedDate = blogPost.PublishedDate,
+                ShortDescription = blogPost.ShortDescription,
+                Title = blogPost.Title,
+                UrlHandle = blogPost.UrlHandle,
+                Categories = blogPost.Categories.Select(x => new CategoryDto()
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    UrlHandle = x.UrlHandle,
+                }).ToList()
+            };
+            return Ok(response);
+        }
     }
 }

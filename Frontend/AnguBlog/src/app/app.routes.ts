@@ -3,6 +3,16 @@ import { AddCategoryComponent } from './features/category/add-category/add-categ
 
 export const routes: Routes = [
     {
+        path:"",
+        loadComponent:
+        ()=> import("./features/public/home/home.component").then(x=>x.HomeComponent)
+    },
+    {
+        path:"blog/:url",
+        loadComponent:
+        ()=> import("./features/public/blog-details/blog-details.component").then(x=>x.BlogDetailsComponent)
+    },
+    {
         path:"admin/categories",
         loadComponent:
         ()=> import("./features/category/category-list/category-list.component").then(x=>x.CategoryListComponent)
