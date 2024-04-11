@@ -8,6 +8,11 @@ export const routes: Routes = [
         ()=> import("./features/public/home/home.component").then(x=>x.HomeComponent)
     },
     {
+        path:"login",
+        loadComponent:
+        ()=> import("./features/auth/login/login.component").then(x=>x.LoginComponent)
+    },
+    {
         path:"blog/:url",
         loadComponent:
         ()=> import("./features/public/blog-details/blog-details.component").then(x=>x.BlogDetailsComponent)

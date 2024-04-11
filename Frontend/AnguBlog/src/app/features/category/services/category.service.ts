@@ -13,14 +13,14 @@ export class CategoryService {
 
   constructor(private http:HttpClient) { }
 
-  addCategory(model:AddCategoryRequest): Observable<void>{
-    return this.http.post<void>(`${environment.apiBaseUrl}/api/categories`,model);
-  }
   getAllCategories():Observable<Category[]>{
     return this.http.get<Category[]>(`${environment.apiBaseUrl}/api/categories`);
   }
   getById(id:string):Observable<Category>{
     return this.http.get<Category>(`${environment.apiBaseUrl}/api/categories/${id}`)
+  }
+  addCategory(model:AddCategoryRequest): Observable<void>{
+    return this.http.post<void>(`${environment.apiBaseUrl}/api/categories`,model);
   }
   editCategory(id:string,request:editCategoryRequest){
     return this.http.put<Category>(`${environment.apiBaseUrl}/api/categories/${id}`,request)
