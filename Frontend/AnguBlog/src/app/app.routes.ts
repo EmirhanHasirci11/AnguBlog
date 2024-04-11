@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { AddCategoryComponent } from './features/category/add-category/add-category.component';
+import { authGuard } from './features/auth/guards/auth.guard';
 
 export const routes: Routes = [
     {
@@ -20,17 +21,21 @@ export const routes: Routes = [
     {
         path:"admin/categories",
         loadComponent:
-        ()=> import("./features/category/category-list/category-list.component").then(x=>x.CategoryListComponent)
+        ()=> import("./features/category/category-list/category-list.component").then(x=>x.CategoryListComponent),
+        canActivate:[authGuard]
     },
     {
         path:"admin/categories/add",
         loadComponent:
         ()=> import("./features/category/add-category/add-category.component").then(x=>x.AddCategoryComponent)
+        ,
+        canActivate:[authGuard]
     },
     {
         path:"admin/categories/:id",
         loadComponent:
-        ()=>import("./features/category/edit-category/edit-category.component").then(x=>x.EditCategoryComponent)
+        ()=>import("./features/category/edit-category/edit-category.component").then(x=>x.EditCategoryComponent),
+        canActivate:[authGuard]
     },
     {
         path:"admin/blogposts",
@@ -40,11 +45,13 @@ export const routes: Routes = [
     {
         path:"admin/blogposts/add",
         loadComponent:
-        ()=>import("./features/blog-post/add-blogpost/add-blogpost.component").then(x=>x.AddBlogpostComponent)
+        ()=>import("./features/blog-post/add-blogpost/add-blogpost.component").then(x=>x.AddBlogpostComponent),
+        canActivate:[authGuard]
     },
     {
         path:"admin/blogposts/:id",
         loadComponent:
-        ()=>import("./features/blog-post/edit-blogpost/edit-blogpost.component").then(x=>x.EditBlogpostComponent)
+        ()=>import("./features/blog-post/edit-blogpost/edit-blogpost.component").then(x=>x.EditBlogpostComponent),
+        canActivate:[authGuard]
     }
 ];
